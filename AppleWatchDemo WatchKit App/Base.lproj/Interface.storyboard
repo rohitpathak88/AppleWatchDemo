@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ffG-KH-8kR">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--InterfaceController-->
+        <scene sceneID="9a1-Ko-FK3">
+            <objects>
+                <controller identifier="InterfaceController" fullBounds="YES" id="ffG-KH-8kR" customClass="InterfaceController" customModule="AppleWatchDemo_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" radius="0.0" id="fMB-7i-UZF">
+                            <items>
+                                <button width="1" height="50" alignment="center" verticalAlignment="center" title="Command" id="Jp2-EY-xut">
+                                    <connections>
+                                        <action selector="commandAction" destination="ffG-KH-8kR" id="efJ-k4-PEI"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="0" id="6Di-UV-Hil"/>
+                    </items>
+                    <connections>
+                        <outlet property="commandButton" destination="Jp2-EY-xut" id="iYx-bX-XNg"/>
+                        <outlet property="statusLabel" destination="6Di-UV-Hil" id="jhy-dU-7KE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="9"/>
+        </scene>
+    </scenes>
+</document>
