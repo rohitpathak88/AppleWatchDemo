@@ -20,13 +20,6 @@
 		5030A55B22ADE99B005A4F8B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030A55A22ADE99B005A4F8B /* ExtensionDelegate.swift */; };
 		5030A55D22ADE99B005A4F8B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030A55C22ADE99B005A4F8B /* NotificationController.swift */; };
 		5030A55F22ADE99C005A4F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5030A55E22ADE99C005A4F8B /* Assets.xcassets */; };
-		5030A57922ADEAA6005A4F8B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030A57122ADEAA6005A4F8B /* CoreDataManager.swift */; };
-		5030A57A22ADEAA6005A4F8B /* CoreEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030A57222ADEAA6005A4F8B /* CoreEngine.swift */; };
-		5030A57B22ADEAA6005A4F8B /* EventLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030A57322ADEAA6005A4F8B /* EventLoop.swift */; };
-		5030A57C22ADEAA6005A4F8B /* RequestScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030A57522ADEAA6005A4F8B /* RequestScheduler.swift */; };
-		5030A57D22ADEAA6005A4F8B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030A57622ADEAA6005A4F8B /* NetworkManager.swift */; };
-		5030A57E22ADEAA6005A4F8B /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030A57722ADEAA6005A4F8B /* ApiRouter.swift */; };
-		5030A57F22ADEAA6005A4F8B /* RestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030A57822ADEAA6005A4F8B /* RestHelper.swift */; };
 		5030A58122ADEEB3005A4F8B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030A58022ADEEB3005A4F8B /* Extension.swift */; };
 		5030A58A22ADF603005A4F8B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030A58322ADF603005A4F8B /* Logger.swift */; };
 		5030A58B22ADF603005A4F8B /* SessionTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030A58422ADF603005A4F8B /* SessionTransfer.swift */; };
@@ -43,9 +36,6 @@
 		5030A59722ADFB44005A4F8B /* SessionTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030A58422ADF603005A4F8B /* SessionTransfer.swift */; };
 		5030A59822ADFB48005A4F8B /* FileTransferObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030A58622ADF603005A4F8B /* FileTransferObservers.swift */; };
 		5058763B22B001900030ADB7 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030A58022ADEEB3005A4F8B /* Extension.swift */; };
-		6364E1A605841397102D3357 /* libPods-AppleWatchDemo WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC558599405E33598B010456 /* libPods-AppleWatchDemo WatchKit App.a */; };
-		ADC4DBA0E53CF6832E2A2314 /* Pods_AppleWatchDemo_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D04C517270D3F4854BF79D3 /* Pods_AppleWatchDemo_WatchKit_Extension.framework */; };
-		B9ACFAC8B232F6FD9A81F15D /* Pods_AppleWatchDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD319AA1CBFB1DD2CB9EF48 /* Pods_AppleWatchDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,8 +81,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		36315B19A49EB4420A495DBC /* Pods-AppleWatchDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleWatchDemo.debug.xcconfig"; path = "Target Support Files/Pods-AppleWatchDemo/Pods-AppleWatchDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		4D04C517270D3F4854BF79D3 /* Pods_AppleWatchDemo_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleWatchDemo_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5030A53222ADE999005A4F8B /* AppleWatchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleWatchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5030A53522ADE999005A4F8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5030A53722ADE999005A4F8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,13 +99,6 @@
 		5030A55E22ADE99C005A4F8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5030A56022ADE99C005A4F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5030A56122ADE99C005A4F8B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		5030A57122ADEAA6005A4F8B /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		5030A57222ADEAA6005A4F8B /* CoreEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreEngine.swift; sourceTree = "<group>"; };
-		5030A57322ADEAA6005A4F8B /* EventLoop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventLoop.swift; sourceTree = "<group>"; };
-		5030A57522ADEAA6005A4F8B /* RequestScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestScheduler.swift; sourceTree = "<group>"; };
-		5030A57622ADEAA6005A4F8B /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		5030A57722ADEAA6005A4F8B /* ApiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
-		5030A57822ADEAA6005A4F8B /* RestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestHelper.swift; sourceTree = "<group>"; };
 		5030A58022ADEEB3005A4F8B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		5030A58322ADF603005A4F8B /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		5030A58422ADF603005A4F8B /* SessionTransfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTransfer.swift; sourceTree = "<group>"; };
@@ -129,13 +110,6 @@
 		5030A59122ADF784005A4F8B /* AppleWatchDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleWatchDemo.entitlements; sourceTree = "<group>"; };
 		5030A59922AE0798005A4F8B /* AppleWatchDemo WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AppleWatchDemo WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		5030A59A22AE07FC005A4F8B /* AppleWatchDemo WatchKit App.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "AppleWatchDemo WatchKit App.entitlements"; sourceTree = "<group>"; };
-		60BAA31C72B41C1814D1B136 /* Pods-AppleWatchDemo WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleWatchDemo WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-AppleWatchDemo WatchKit Extension/Pods-AppleWatchDemo WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		9F326D3DFF60485E7DE05D68 /* Pods-AppleWatchDemo WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleWatchDemo WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-AppleWatchDemo WatchKit App/Pods-AppleWatchDemo WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
-		BCD319AA1CBFB1DD2CB9EF48 /* Pods_AppleWatchDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleWatchDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFCF25B5DEA0EB15C3E94644 /* Pods-AppleWatchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleWatchDemo.release.xcconfig"; path = "Target Support Files/Pods-AppleWatchDemo/Pods-AppleWatchDemo.release.xcconfig"; sourceTree = "<group>"; };
-		C08FB0BC576E9C968B08FCB8 /* Pods-AppleWatchDemo WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleWatchDemo WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-AppleWatchDemo WatchKit Extension/Pods-AppleWatchDemo WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		E068AF43A163755089FB90C6 /* Pods-AppleWatchDemo WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleWatchDemo WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-AppleWatchDemo WatchKit App/Pods-AppleWatchDemo WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
-		FC558599405E33598B010456 /* libPods-AppleWatchDemo WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppleWatchDemo WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +117,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6364E1A605841397102D3357 /* libPods-AppleWatchDemo WatchKit App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +124,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9ACFAC8B232F6FD9A81F15D /* Pods_AppleWatchDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,26 +131,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADC4DBA0E53CF6832E2A2314 /* Pods_AppleWatchDemo_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		44969B3883DB565AC8D2B1DE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				36315B19A49EB4420A495DBC /* Pods-AppleWatchDemo.debug.xcconfig */,
-				BFCF25B5DEA0EB15C3E94644 /* Pods-AppleWatchDemo.release.xcconfig */,
-				E068AF43A163755089FB90C6 /* Pods-AppleWatchDemo WatchKit App.debug.xcconfig */,
-				9F326D3DFF60485E7DE05D68 /* Pods-AppleWatchDemo WatchKit App.release.xcconfig */,
-				60BAA31C72B41C1814D1B136 /* Pods-AppleWatchDemo WatchKit Extension.debug.xcconfig */,
-				C08FB0BC576E9C968B08FCB8 /* Pods-AppleWatchDemo WatchKit Extension.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		5030A52922ADE999005A4F8B = {
 			isa = PBXGroup;
 			children = (
@@ -186,7 +144,6 @@
 				5030A54822ADE99A005A4F8B /* AppleWatchDemo WatchKit App */,
 				5030A55722ADE99B005A4F8B /* AppleWatchDemo WatchKit Extension */,
 				5030A53322ADE999005A4F8B /* Products */,
-				44969B3883DB565AC8D2B1DE /* Pods */,
 				D31E24E5E3B04358792F1BD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -206,7 +163,6 @@
 			children = (
 				5030A59122ADF784005A4F8B /* AppleWatchDemo.entitlements */,
 				5030A58222ADF603005A4F8B /* Shared */,
-				5030A56F22ADEAA6005A4F8B /* Core */,
 				5030A53522ADE999005A4F8B /* AppDelegate.swift */,
 				5030A53722ADE999005A4F8B /* ViewController.swift */,
 				5030A53922ADE999005A4F8B /* Main.storyboard */,
@@ -243,36 +199,6 @@
 			path = "AppleWatchDemo WatchKit Extension";
 			sourceTree = "<group>";
 		};
-		5030A56F22ADEAA6005A4F8B /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				5030A57022ADEAA6005A4F8B /* CoreEngine */,
-				5030A57422ADEAA6005A4F8B /* Network */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		5030A57022ADEAA6005A4F8B /* CoreEngine */ = {
-			isa = PBXGroup;
-			children = (
-				5030A57122ADEAA6005A4F8B /* CoreDataManager.swift */,
-				5030A57222ADEAA6005A4F8B /* CoreEngine.swift */,
-				5030A57322ADEAA6005A4F8B /* EventLoop.swift */,
-			);
-			path = CoreEngine;
-			sourceTree = "<group>";
-		};
-		5030A57422ADEAA6005A4F8B /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				5030A57522ADEAA6005A4F8B /* RequestScheduler.swift */,
-				5030A57622ADEAA6005A4F8B /* NetworkManager.swift */,
-				5030A57722ADEAA6005A4F8B /* ApiRouter.swift */,
-				5030A57822ADEAA6005A4F8B /* RestHelper.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		5030A58222ADF603005A4F8B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,9 +216,6 @@
 		D31E24E5E3B04358792F1BD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BCD319AA1CBFB1DD2CB9EF48 /* Pods_AppleWatchDemo.framework */,
-				FC558599405E33598B010456 /* libPods-AppleWatchDemo WatchKit App.a */,
-				4D04C517270D3F4854BF79D3 /* Pods_AppleWatchDemo_WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -304,12 +227,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5030A56C22ADE99C005A4F8B /* Build configuration list for PBXNativeTarget "AppleWatchDemo" */;
 			buildPhases = (
-				C919DA907FED3DEB5401AA23 /* [CP] Check Pods Manifest.lock */,
 				5030A52E22ADE999005A4F8B /* Sources */,
 				5030A52F22ADE999005A4F8B /* Frameworks */,
 				5030A53022ADE999005A4F8B /* Resources */,
 				5030A56B22ADE99C005A4F8B /* Embed Watch Content */,
-				8D0A83564776764D948180D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -325,7 +246,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5030A56822ADE99C005A4F8B /* Build configuration list for PBXNativeTarget "AppleWatchDemo WatchKit App" */;
 			buildPhases = (
-				9F5C329A15A936BB67DAD970 /* [CP] Check Pods Manifest.lock */,
 				5030A54222ADE99A005A4F8B /* Resources */,
 				5030A56722ADE99C005A4F8B /* Embed App Extensions */,
 				495E5017212BB900E132A646 /* Frameworks */,
@@ -344,7 +264,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5030A56422ADE99C005A4F8B /* Build configuration list for PBXNativeTarget "AppleWatchDemo WatchKit Extension" */;
 			buildPhases = (
-				20A6FBB18F40CD29A665AB44 /* [CP] Check Pods Manifest.lock */,
 				5030A54F22ADE99B005A4F8B /* Sources */,
 				5030A55022ADE99B005A4F8B /* Frameworks */,
 				5030A55122ADE99B005A4F8B /* Resources */,
@@ -444,116 +363,18 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		20A6FBB18F40CD29A665AB44 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AppleWatchDemo WatchKit Extension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8D0A83564776764D948180D1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppleWatchDemo/Pods-AppleWatchDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppleWatchDemo/Pods-AppleWatchDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9F5C329A15A936BB67DAD970 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AppleWatchDemo WatchKit App-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C919DA907FED3DEB5401AA23 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AppleWatchDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		5030A52E22ADE999005A4F8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5030A57B22ADEAA6005A4F8B /* EventLoop.swift in Sources */,
 				5030A58A22ADF603005A4F8B /* Logger.swift in Sources */,
-				5030A57922ADEAA6005A4F8B /* CoreDataManager.swift in Sources */,
-				5030A57F22ADEAA6005A4F8B /* RestHelper.swift in Sources */,
 				5030A53822ADE999005A4F8B /* ViewController.swift in Sources */,
 				5030A58B22ADF603005A4F8B /* SessionTransfer.swift in Sources */,
 				5030A58F22ADF603005A4F8B /* SessionCommands.swift in Sources */,
 				5030A58D22ADF603005A4F8B /* FileTransferObservers.swift in Sources */,
-				5030A57D22ADEAA6005A4F8B /* NetworkManager.swift in Sources */,
 				5030A58122ADEEB3005A4F8B /* Extension.swift in Sources */,
-				5030A57C22ADEAA6005A4F8B /* RequestScheduler.swift in Sources */,
 				5030A58E22ADF603005A4F8B /* TestDataProvider.swift in Sources */,
-				5030A57E22ADEAA6005A4F8B /* ApiRouter.swift in Sources */,
-				5030A57A22ADEAA6005A4F8B /* CoreEngine.swift in Sources */,
 				5030A58C22ADF603005A4F8B /* CommandStatus.swift in Sources */,
 				5030A59022ADF603005A4F8B /* SessionDelegater.swift in Sources */,
 				5030A53622ADE999005A4F8B /* AppDelegate.swift in Sources */,
@@ -739,7 +560,6 @@
 		};
 		5030A56522ADE99C005A4F8B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60BAA31C72B41C1814D1B136 /* Pods-AppleWatchDemo WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "AppleWatchDemo WatchKit Extension/AppleWatchDemo WatchKit Extension.entitlements";
@@ -764,7 +584,6 @@
 		};
 		5030A56622ADE99C005A4F8B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C08FB0BC576E9C968B08FCB8 /* Pods-AppleWatchDemo WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "AppleWatchDemo WatchKit Extension/AppleWatchDemo WatchKit Extension.entitlements";
@@ -789,7 +608,6 @@
 		};
 		5030A56922ADE99C005A4F8B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E068AF43A163755089FB90C6 /* Pods-AppleWatchDemo WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -811,7 +629,6 @@
 		};
 		5030A56A22ADE99C005A4F8B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F326D3DFF60485E7DE05D68 /* Pods-AppleWatchDemo WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -833,7 +650,6 @@
 		};
 		5030A56D22ADE99C005A4F8B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36315B19A49EB4420A495DBC /* Pods-AppleWatchDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AppleWatchDemo/AppleWatchDemo.entitlements;
@@ -855,7 +671,6 @@
 		};
 		5030A56E22ADE99C005A4F8B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFCF25B5DEA0EB15C3E94644 /* Pods-AppleWatchDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AppleWatchDemo/AppleWatchDemo.entitlements;

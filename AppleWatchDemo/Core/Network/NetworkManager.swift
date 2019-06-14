@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Alamofire
+//import Alamofire
 
 class NetworkManager: EventLoop {
     
@@ -94,16 +94,16 @@ class NetworkManager: EventLoop {
     fileprivate func processUploadFileRequest(url:URL,apiRequest:URLRequestConvertible?){
         self.isFileInProcess = true
         if let request =  apiRequest{
-            sessionManager.upload(url, with: request)
-                .uploadProgress { progress in // main queue by default
-                    print("Upload Progress: \(progress.fractionCompleted)")
-                    self.handleProgress(progress: progress.fractionCompleted, forFile: url)
-                    
-                }
-                .responseData { responseData in
-                    self.isFileInProcess = false
-                    self.handleRestResponse(response: responseData)
-            }
+//            sessionManager.upload(url, with: request)
+//                .uploadProgress { progress in // main queue by default
+//                    print("Upload Progress: \(progress.fractionCompleted)")
+//                    self.handleProgress(progress: progress.fractionCompleted, forFile: url)
+//
+//                }
+//                .responseData { responseData in
+//                    self.isFileInProcess = false
+//                    self.handleRestResponse(response: responseData)
+//            }
         } else {
             
         }
@@ -111,70 +111,70 @@ class NetworkManager: EventLoop {
     
     fileprivate func uploadMediaService(url:URL, data:[Any], withName:[String], fileName:[String], mimeType:[String], parameters:[String:Any]?) {
         
-        self.isFileInProcess = true
-        sessionManager.upload(multipartFormData: { (multipartFormData) in
-            
-            for (key,value) in parameters! {
-                if let value = value as? String {
-                    multipartFormData.append(value.data(using: String.Encoding.utf8)!, withName: key)
-                }
-            }
-            
-            for (index,item) in data.enumerated() {
-                if let items = item as? UIImage {
-                    multipartFormData.append(items.jpegData(compressionQuality: 0.5)!, withName: withName[index], fileName: fileName[index], mimeType: mimeType[index])
-                }
-            }
-            
-        }, to:url) { (result) in
-            
-            switch result {
-            case .success(let upload, _, _):
-                upload.uploadProgress(closure: { (progress) in
-                    self.handleProgress(progress: progress.fractionCompleted, forFile:url)
-                })
-                upload.responseData { response in
-                    self.isFileInProcess = false
-                    self.handleRestResponse(response: response)
-                }
-            case .failure(let error):
-                print(error.localizedDescription)
-                break
-            }
-        }
+//        self.isFileInProcess = true
+//        sessionManager.upload(multipartFormData: { (multipartFormData) in
+//
+//            for (key,value) in parameters! {
+//                if let value = value as? String {
+//                    multipartFormData.append(value.data(using: String.Encoding.utf8)!, withName: key)
+//                }
+//            }
+//
+//            for (index,item) in data.enumerated() {
+//                if let items = item as? UIImage {
+//                    multipartFormData.append(items.jpegData(compressionQuality: 0.5)!, withName: withName[index], fileName: fileName[index], mimeType: mimeType[index])
+//                }
+//            }
+//
+//        }, to:url) { (result) in
+//
+//            switch result {
+//            case .success(let upload, _, _):
+//                upload.uploadProgress(closure: { (progress) in
+//                    self.handleProgress(progress: progress.fractionCompleted, forFile:url)
+//                })
+//                upload.responseData { response in
+//                    self.isFileInProcess = false
+//                    self.handleRestResponse(response: response)
+//                }
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//                break
+//            }
+//        }
     }
     
     fileprivate func processDownloadFileRequest(serverURL:URL,localFileURL:URL){
         
-        self.isFileInProcess = true
-        
-        let destination: DownloadRequest.DownloadFileDestination = { _, _ in
-            return (localFileURL, [.removePreviousFile, .createIntermediateDirectories])
-        }
-        
-        Alamofire.download(serverURL, to: destination)
-            .downloadProgress { (progress) in
-                print("Download Progress: \(progress.fractionCompleted)")
-                self.handleProgress(progress: progress.fractionCompleted, forFile: localFileURL)
-            }
-            .response { response in
-                
-                self.isFileInProcess = false
-                
-                if response.error == nil{
-                    self.handleRestResponse(response: response)
-                }
-                
-        }
+//        self.isFileInProcess = true
+//
+//        let destination: DownloadRequest.DownloadFileDestination = { _, _ in
+//            return (localFileURL, [.removePreviousFile, .createIntermediateDirectories])
+//        }
+//
+//        Alamofire.download(serverURL, to: destination)
+//            .downloadProgress { (progress) in
+//                print("Download Progress: \(progress.fractionCompleted)")
+//                self.handleProgress(progress: progress.fractionCompleted, forFile: localFileURL)
+//            }
+//            .response { response in
+//
+//                self.isFileInProcess = false
+//
+//                if response.error == nil{
+//                    self.handleRestResponse(response: response)
+//                }
+//
+//        }
     }
     
     fileprivate func processRestRequest(apiRequest:URLRequestConvertible?){
         
-        if let request = try? apiRequest?.asURLRequest(){
-            sessionManager.request(request).responseJSON { (response) in
-                self.handleRestResponse(response: response.value)
-            }
-        }
+//        if let request = try? apiRequest?.asURLRequest(){
+//            sessionManager.request(request).responseJSON { (response) in
+//                self.handleRestResponse(response: response.value)
+//            }
+//        }
     }
     
     // MARK: Handlers

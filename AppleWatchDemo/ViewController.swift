@@ -18,19 +18,19 @@ class ViewController: UIViewController,SessionCommands {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        restCallBackID = CoreEngine.shared.registerEventCallBack(cbType: .REST_CALLBACK, cbBlock: { (what
-            , result, response) in
-            
-            if let data = response as? [String:Any]{
-                self.updateAppContext(data)
-            }
-        })
+//        restCallBackID = CoreEngine.shared.registerEventCallBack(cbType: .REST_CALLBACK, cbBlock: { (what
+//            , result, response) in
+//
+//            if let data = response as? [String:Any]{
+//                self.updateAppContext(data)
+//            }
+//        })
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        if let callback = restCallBackID{
-            CoreEngine.shared.unregisterEventForID(cbType: .REST_CALLBACK, regId: callback)
-        }
+//        if let callback = restCallBackID{
+//            CoreEngine.shared.unregisterEventForID(cbType: .REST_CALLBACK, regId: callback)
+//        }
     }
     
     func addObserver(){
@@ -71,9 +71,9 @@ class ViewController: UIViewController,SessionCommands {
         
         if commandStatus.command == .updateAppContext{
             // Do any additional setup after loading the view.
-            let params = ["timestamp":Date().iso8601]
-            let restEvent  = RestEngineEvents.init(id: .LOGIN, obj: params as AnyObject)
-            CoreEngine.shared.addEvent(evObj: restEvent)
+//            let params = ["timestamp":Date().iso8601]
+//            let restEvent  = RestEngineEvents.init(id: .LOGIN, obj: params as AnyObject)
+//            CoreEngine.shared.addEvent(evObj: restEvent)
         }
         
     }
